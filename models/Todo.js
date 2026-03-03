@@ -11,10 +11,6 @@ const TodoSchema = new mongoose.Schema({
   title: String,
   desc: String,
   isDone: Boolean,
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "users",
-  },
 });
 
 export const Todo = mongoose.model("todos", TodoSchema);
